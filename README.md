@@ -12,6 +12,13 @@
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
 </p>
 
+## Swift 4
+
+To use the Swift 4 version, add this to your Podfile (until 2.2 or higher is released):
+```ruby
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/gopinath0332/Chameleon'
+```
+
 ## Swift 3
 
 To use the Swift 3 version, add this to your Podfile (until 2.2 or higher is released):
@@ -727,6 +734,15 @@ To set a global theme, you can do the following in your app delegate:
 ###### Objective-C
 ``` objective-c
 [Chameleon setGlobalThemeUsingPrimaryColor:(UIColor *)color withContentStyle:(UIContentStyle)contentStyle];
+```
+
+###### Swift 4
+
+``` swift
+ Chameleon.setGlobalThemeUsingPrimaryColor(FlatSkyBlue(), with: .light)
+
+ Add this line in ```didFinishLaunchingWithOptions``` in AppDelegate
+ 
 ```
 
 But what if you want a different theme for a specific `UIViewController?` No problem, Chameleon allows you to override the global theme in any `UIViewController` and `UINavigationController`, by simply doing the following:
