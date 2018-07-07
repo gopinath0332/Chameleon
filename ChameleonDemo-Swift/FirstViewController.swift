@@ -12,7 +12,7 @@ import  Chameleon
 class FirstViewController: UITableViewController {
     
     @IBOutlet weak var randomFlatColorLabel: UILabel!
-    
+    /Users/gopi/projects/Chameleon/Pod/Classes/Swift/ChameleonShorthand.swift
     @IBOutlet weak var complementaryFlatColorLabel: UILabel!
     
     @IBOutlet weak var contrastFlatColorLabel: UILabel!
